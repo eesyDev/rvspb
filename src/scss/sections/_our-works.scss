@@ -1,0 +1,38 @@
+.our-works {
+    padding: 100px 0;
+    background-color: var(--color-gray-200);
+    &__slider {
+        margin-top: 35px;
+    }
+    &__card {
+        border-radius: 10px;
+        background-color: var(--color--white);
+        &-img {
+            width: 100%;
+            height: 232px;
+            
+            object-fit: cover;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+        &-title {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    &__navigation {
+        justify-content: center;
+        margin-top: 35px;
+        gap: 20px;
+        .swiper-button {
+            position: static;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

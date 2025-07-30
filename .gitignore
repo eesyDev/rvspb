@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Gulp cache or temp
+.cache/
+.tmp/
+dist/
+
+# Сборка
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SCSS cache
+.sass-cache/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# ENV
+.env
+.env.*

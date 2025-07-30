@@ -1,0 +1,32 @@
+.hero {
+    background-color: var(--color-gray-100);
+    background-image: url('../img/hero.png');
+    padding: 98px 0;
+    &__offer {
+        max-width: 492px;
+        border-radius: 25px;
+        background-color: var(--color--white);
+        padding: 35px;
+    }
+    &__description {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .divider {
+        margin-top: 35px;
+        &:first-child {
+            margin-top: 49px;
+        }
+    }
+    &__list {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 330px;
+    }
+    .button {
+        margin-top: 49px;
+    }
+}

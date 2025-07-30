@@ -1,0 +1,115 @@
+<section class="calculator">
+    <div class="container">
+        <div class="calculator__wrapper flex">
+            <div class="calculator__info">
+                <h2 class="title h2">Зачем нужна помощь в приемке квартиры:</h2>
+                <ul class="list calculator__list">
+                    <li>
+                        <span class="list-title">Выявление скрытых дефектов:</span>
+                        <span class="list-descr">Профессионалы используют специальное оборудование для выявления скрытых
+                            проблем</span>
+                    </li>
+                    <li>
+                        <span class="list-title">Экономия времени и денег:</span>
+                        <span class="list-descr">Недостатки, выявленные на этапе приемки, могут быть устранены
+                            застройщиком, что сэкономит ваши деньги и время на последующий ремонт</span>
+                    </li>
+                    <li>
+                        <span class="list-title">Юридическая защита:</span>
+                        <span class="list-descr">Могут быть устранены застройщиком, что сэкономит ваши деньги и время на
+                            последующий ремонт</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="calculator__layer">
+                <h3 class="h3 title">Рассчитать стоимость онлайн</h3>
+                <div class="divider w-100"></div>
+                <div class="calculator__layer-inner">
+                    <div class="calculator__layer-form">
+                        <form id="calculator">
+                            <div class="form-inner">
+                                <div class="form-left">
+                                    <div class="form-top">
+                                        <div class="input-outer">
+                                            <label for="name">Название ЖК</label>
+                                            <input type="text" id="name" placeholder="Название ЖК" class="inpt" />
+                                        </div>
+
+                                        <div class="input-outer">
+                                            <label for="variant">Вариант отделки</label>
+                                            <select id="variant" class="inpt">
+                                                <option value="with_finish">С отделкой</option>
+                                                <option value="without_finish">Без отделки</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-outer">
+                                            <label for="area">Площадь квартиры</label>
+                                            <input type="text" id="area" value="" placeholder="50 кв. м" class="inpt" />
+                                        </div>
+                                        <div class="input-outer">
+                                            <span class="calculate-way">Рассчитывается так: <span class="value">90
+                                                    ₽/м²</span></span>
+                                            <div class="divider w-100"></div>
+                                            <span class="min-price">Минимальная стоимость: <span class="value">3 500
+                                                    ₽</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="divider w-100"></div>
+                                    <div class="form-bottom">
+                                        <h3 class="form-bottom-title">Дополнительные услуги</h3>
+                                        <div class="switch-wrapper">
+                                            <div class="switch-outer">
+                                                <div class="switch-heading">
+                                                    <label class="switch">
+                                                        <input type="checkbox" class="service" data-name="Подробный чертеж" data-price="500" name="1" />
+                                                        <span class="slider"></span>
+                                                    </label>
+                                                    <div class="switch-title">Подробный чертеж</div>
+                                                </div>
+                                                <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+                                            </div>
+                                            <div class="switch-outer">
+                                                <div class="switch-heading">
+                                                    <label class="switch">
+                                                        <input type="checkbox" class="service" data-name="Выезд инженера" data-price="700" name="2" />
+                                                        <span class="slider"></span>
+                                                    </label>
+                                                    <div class="switch-title">Выезд инженера</div>
+                                                </div>
+                                                <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Итог -->
+                                <div class="form-right">
+                                    <div class="form-right-top">
+                                        <h3 class="form-right-title">Итоговая стоимость</h3>
+                                        <div class="divider"></div>
+                                        <div id="summary">
+                                            <p class="color--shaded subtitle">Выбранные параметры:</p>
+                                            <ul id="selectedParams" class="selected-params">
+                                                <li>Комплексная приемка квартиры 37 м2</li>
+                                                <li>Подробный чертеж</li>
+                                            </ul>
+                                            <div class="divider"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="form-right-bottom">
+                                        <div class="selected-sum">3500 руб.</div>
+                                        <button type="submit" class="button button--primary w-100">Заказать приёмку</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

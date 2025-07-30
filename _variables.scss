@@ -1,0 +1,31 @@
+// --- PATHS ---
+$imgpath: "../img";
+
+// --- BREAKPOINTS ---
+$w-mob-s:      450px;  // Small mobile
+$w-mob:        640px;  // Mobile
+$w-tab:        768px;  // Tablet
+$w-laptop:     1200px; // Laptop
+$w-desktop-sm: 1400px; // Laptop
+$w-min:        320px;  // Min screen
+$w-max:        2560px; // Max screen
+
+// CSS Variables
+html {
+    // --- FONTS ---
+    --font-family: "Onest", sans-serif;
+
+    // --- COLORS ---
+    --white: #fff;
+    --black: #000;
+    --orange: #EC4400;
+    --light-orange: #D5846E;
+    --beige: #EEEBE6;
+    --gold: #B4975D;
+    --light-gold: #f6f1e8;
+    --dark-blue: #21212C;
+    --blue: #2D2D3C;
+    --successful: #49aa53;
+    --violet: #7165ff;
+    --error:#e64832;
+}

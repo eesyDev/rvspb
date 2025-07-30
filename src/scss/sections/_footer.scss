@@ -1,0 +1,28 @@
+.footer {
+    background-color: var(--color-gray-200);
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 66px;
+        padding-bottom: 120px;
+    }
+    &__nav ul {
+        gap: 35px;
+        font-weight: 700;
+    }
+    &__actions {
+        display: flex;
+        gap: 15px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__logo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}

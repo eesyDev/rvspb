@@ -1,0 +1,114 @@
+// --- PATHS ---
+$imgpath: "../img";
+
+// --- BREAKPOINTS ---
+$w-mob-s:      450px;  // Small mobile
+$w-mob:        640px;  // Mobile
+$w-tab:        768px;  // Tablet
+$w-laptop:     1200px; // Laptop
+$w-desktop-sm: 1400px; // Laptop
+$w-min:        320px;  // Min screen
+$w-max:        2560px; // Max screen
+
+
+:root {
+    --font-family: "Onest", sans-serif;
+    --color-gray-100: #F2F2F2;
+    --color-gray-200: #F0F0F0;
+    --color-gray-300: #DDDBD9;
+    --color--black: #000000;
+    --color--white: #FFFFFF;
+}
+
+.flex {
+    display: flex;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-center {
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    height: 45px;
+    padding: 13px 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--primary {
+    background-color: var(--color--black);
+    color: var(--color--white);
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.link--primary {
+    width: 45px;
+    height: 45px;
+    background-color: var(--color--black);
+    border-radius: 100%;
+    display: flex;
+}
+.w-100 {
+    width: 100%;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.list {
+    li {
+        padding-left: 20px;
+        position: relative;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: var(--color--black);
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+}
+.inpt {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 35px;
+    padding: 0 15px;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+.title {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1, .h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.color--shaded {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.font-bold {
+    font-weight: 700;
+}

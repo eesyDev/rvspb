@@ -1,0 +1,352 @@
+@use 'utilities/variables';
+
+* {
+    box-sizing: border-box;
+}
+// --- SPACING ---
+.spacer {
+	display: block;
+	width: 100%;
+	&--40    { height: 40px }
+	&--72    { height: 72px }
+	&--80    { height: 80px }
+	&--120   { height: 120px }
+	&--150   { height: 150px }
+    &--200   { height: 200px }
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--beige);
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1524px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0 auto;
+    &.container-sm {
+        max-width: 1200px;
+    }
+}
+
+@media (hover: hover) {
+    a {
+        &.hovered {
+            &:hover {
+                color: var(--gold);
+            }
+        }
+    }
+
+    .btn {
+        &:hover {
+            &.btn--primary {
+                color: var(--white);
+                background-color: var(--dark-blue);
+            }
+        }
+        &.btn--outlined {
+            &:hover {
+                color: var(--dark-blue);
+                border: 2px solid var(--dark-blue);
+            }
+        }
+    }
+}
+.pattern-top-image {
+    background-image: url('../img/bg.png');
+    background-repeat: repeat-y;
+    background-size: 110% 50%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .pattern-bottom-image {
+    background-image: url('../img/bg.png');
+    background-repeat: repeat-y;
+    background-size: 140% 50%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+img, svg, video  {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0;
+    font-family: var(--font-family-serif);
+}
+
+h1, .h1 {
+    font-size: 3.75em;
+}
+
+h2, .h2 {
+    font-size: 3.5em;
+}
+
+h3, .h3 {
+    font-size: 3em;
+}
+
+h4, .h4 {
+    font-size: 2.5em;
+}
+
+h5, .h5 {
+    font-size: 2em;
+}
+h6, .h6 {
+    font-size: 1.4em;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    .paragraph {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.pre-title {
+    text-transform: uppercase;
+    color: var(--light-orange);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 50px;
+    padding: 0 50px;
+    transition: all .2s linear;
+    &.btn--primary {
+        color: var(--white);
+        background-color: var(--orange);
+        border: 0;
+    }
+    &.btn--outlined {
+        color: var(--gold);
+        border: 2px solid var(--gold);
+        font-weight: 600;
+    }
+}
+
+.swiper-pagination {
+    width: 100%;
+    left: 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+    .swiper-pagination-bullet {
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
+        &.swiper-pagination-bullet-active {
+            background-color: var(--gold);
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .pattern-top-image {
+        background-size: 130% 50%;
+    }
+
+    .pattern-bottom-image {
+        background-size: 130% 50%;
+    }
+
+    h1, .h1 {
+        font-size: 3.5em;
+    }
+    
+    h2, .h2 {
+        font-size: 3.25em;
+    }
+    
+    h3, .h3 {
+        font-size: 2.75em;
+    }
+    
+    h4, .h4 {
+        font-size: 2.25em;
+    }
+    
+    h5, .h5 {
+        font-size: 1.75em;
+    }
+    h6, .h6 {
+        font-size: 1.275em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h1, .h1 {
+        font-size: 3em;
+    }
+    
+    h2, .h2 {
+        font-size: 3em;
+    }
+    
+    h3, .h3 {
+        font-size: 2.25em;
+    }
+    
+    h4, .h4 {
+        font-size: 2em;
+    }
+    
+    h5, .h5 {
+        font-size: 1.5em;
+    }
+    h6, .h6 {
+        font-size: 1em;
+    }
+    .spacer {
+        display: block;
+        width: 100%;
+        &--120   { height: 100px }
+        &--150   { height: 120px }
+        &--200   { height: 150px }
+    }
+    .pattern-bottom-image {
+        background-size: 160% 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    h1, .h1 {
+        font-size: 2.5em;
+    }
+    
+    h2, .h2 {
+        font-size: 2.225em;
+    }
+    
+    h3, .h3 {
+        font-size: 2em;
+    }
+    
+    h4, .h4 {
+        font-size: 1.725em;
+    }
+    .btn {
+        padding: 0 40px;
+    }
+    .swiper-pagination {
+        gap: 18px;
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        h1, .h1 {
+            font-size: 2.25em;
+        }
+        
+        h2, .h2 {
+            font-size: 2em;
+        }
+        
+        h3, .h3 {
+            font-size: 1.725em;
+        }
+        
+        h4, .h4 {
+            font-size: 1.525em;
+        }
+        .spacer--150 {
+            height: 100px;
+        }
+        .spacer--200 {
+            height: 130px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, .h1 {
+        font-size: 2em;
+    }
+    
+    h2, .h2 {
+        font-size: 1.725em;
+    }
+    
+    h3, .h3 {
+        font-size: 1.525em;
+    }
+    
+    h4, .h4 {
+        font-size: 1.225em;
+    }
+    .pattern-top-image {
+        background-size: 180% 50%;
+    }
+    .pattern-bottom-image {
+        background-size: 210% 50%;
+    }
+    .spacer--200 {
+        height: 100px;
+    }
+    .spacer--150 {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .pattern-top-image {
+        background-size: 230% 50%;
+    }
+    .pattern-bottom-image {
+        background-size: 280% 50%;
+    }
+}
