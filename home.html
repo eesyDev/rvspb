@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/lib/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <title>RVSPB</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper flex flex-between">
+                <a href="" class="header__logo">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="45" height="45" rx="22.5" fill="black"/>
+                        <path d="M6.14 27.542V25.624C6.45733 25.624 6.70933 25.5633 6.896 25.442C7.092 25.3207 7.23667 25.148 7.33 24.924C7.43267 24.7 7.50733 24.4387 7.554 24.14C7.60067 23.8787 7.63333 23.5987 7.652 23.3C7.67067 23.0013 7.68 22.7167 7.68 22.446C7.68933 22.166 7.694 21.9187 7.694 21.704L7.736 17.588H14.764V27.5H12.748V19.45H9.626L9.598 21.816C9.58867 22.5347 9.57 23.2113 9.542 23.846C9.52333 24.4713 9.44867 25.036 9.318 25.54C9.19667 26.0347 8.982 26.4453 8.674 26.772C8.38467 27.0613 8.044 27.262 7.652 27.374C7.26933 27.486 6.76533 27.542 6.14 27.542ZM20.0304 27.598C19.2837 27.598 18.6304 27.4487 18.0704 27.15C17.5104 26.842 17.0764 26.408 16.7684 25.848C16.4604 25.2787 16.3064 24.6067 16.3064 23.832C16.3064 23.0387 16.4604 22.3573 16.7684 21.788C17.0857 21.2093 17.5197 20.766 18.0704 20.458C18.6304 20.15 19.2791 19.996 20.0164 19.996C20.7631 19.996 21.4117 20.1547 21.9624 20.472C22.5131 20.7893 22.9424 21.2327 23.2504 21.802C23.5584 22.3713 23.7124 23.0527 23.7124 23.846C23.7124 24.6207 23.5584 25.2927 23.2504 25.862C22.9517 26.422 22.5271 26.8513 21.9764 27.15C21.4351 27.4487 20.7864 27.598 20.0304 27.598ZM20.0024 25.806C20.4411 25.806 20.7864 25.7127 21.0384 25.526C21.2997 25.3393 21.4864 25.0967 21.5984 24.798C21.7197 24.4993 21.7804 24.182 21.7804 23.846C21.7804 23.51 21.7197 23.188 21.5984 22.88C21.4864 22.5627 21.2997 22.306 21.0384 22.11C20.7864 21.9047 20.4411 21.802 20.0024 21.802C19.5824 21.802 19.2417 21.9047 18.9804 22.11C18.7191 22.306 18.5277 22.558 18.4064 22.866C18.2944 23.174 18.2384 23.5007 18.2384 23.846C18.2384 24.182 18.2944 24.4993 18.4064 24.798C18.5277 25.0967 18.7191 25.3393 18.9804 25.526C19.2417 25.7127 19.5824 25.806 20.0024 25.806ZM24.9673 27.5V20.122H30.2873V21.872H26.9273V27.5H24.9673ZM34.5636 27.598C33.8169 27.598 33.1636 27.4487 32.6036 27.15C32.0436 26.842 31.6096 26.408 31.3016 25.848C30.9936 25.2787 30.8396 24.6067 30.8396 23.832C30.8396 23.0387 30.9936 22.3573 31.3016 21.788C31.6189 21.2093 32.0529 20.766 32.6036 20.458C33.1636 20.15 33.8123 19.996 34.5496 19.996C35.2963 19.996 35.9449 20.1547 36.4956 20.472C37.0463 20.7893 37.4756 21.2327 37.7836 21.802C38.0916 22.3713 38.2456 23.0527 38.2456 23.846C38.2456 24.6207 38.0916 25.2927 37.7836 25.862C37.4849 26.422 37.0603 26.8513 36.5096 27.15C35.9683 27.4487 35.3196 27.598 34.5636 27.598ZM34.5356 25.806C34.9743 25.806 35.3196 25.7127 35.5716 25.526C35.8329 25.3393 36.0196 25.0967 36.1316 24.798C36.2529 24.4993 36.3136 24.182 36.3136 23.846C36.3136 23.51 36.2529 23.188 36.1316 22.88C36.0196 22.5627 35.8329 22.306 35.5716 22.11C35.3196 21.9047 34.9743 21.802 34.5356 21.802C34.1156 21.802 33.7749 21.9047 33.5136 22.11C33.2523 22.306 33.0609 22.558 32.9396 22.866C32.8276 23.174 32.7716 23.5007 32.7716 23.846C32.7716 24.182 32.8276 24.4993 32.9396 24.798C33.0609 25.0967 33.2523 25.3393 33.5136 25.526C33.7749 25.7127 34.1156 25.806 34.5356 25.806Z" fill="white"/>
+                    </svg>                    
+                </a>
+                <div class="header__nav">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="">Услуги и цены</a></li>
+                            <li><a href="">Кейсы</a></li>
+                            <li><a href="">Доверие</a></li>
+                            <li><a href="">Полезные материалы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <button class="button button--primary">Зказать приемку</button>
+                    <a href="" class="link--primary"> </a>
+                    <a href="" class="link--primary"> </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__offer">
+                    <h1 class="h1 title">
+                        Помощь в приемке квартир у застройщиков
+                    </h1>
+                    <p class="hero__description">
+                        Проверка квартиры — экспертная помощь перед приёмкой квартиры у застройщика
+                    </p>
+                    <div class="divider w-100"></div>
+                    <ul class="hero__list list">
+                        <li>Проверим жильё на соответствие
+                            строительным нормам и вашему договору</li>
+                        <li>Составим список найденных нарушений</li>
+                        <li>Проконсультируем по выявленным дефектам</li>
+                    </ul>
+                    <div class="divider w-100"></div>
+                    <button class="button button--primary w-100">Зказать приемку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculator">
+        <div class="container">
+            <div class="calculator__wrapper flex">
+                <div class="calculator__info">
+                    <h2 class="title h2">Зачем нужна помощь в приемке квартиры:</h2>
+                    <ul class="list calculator__list">
+                        <li>
+                            <span class="list-title">Выявление скрытых дефектов:</span>
+                            <span class="list-descr">Профессионалы используют специальное оборудование для выявления скрытых
+                                проблем</span>
+                        </li>
+                        <li>
+                            <span class="list-title">Экономия времени и денег:</span>
+                            <span class="list-descr">Недостатки, выявленные на этапе приемки, могут быть устранены
+                                застройщиком, что сэкономит ваши деньги и время на последующий ремонт</span>
+                        </li>
+                        <li>
+                            <span class="list-title">Юридическая защита:</span>
+                            <span class="list-descr">Могут быть устранены застройщиком, что сэкономит ваши деньги и время на
+                                последующий ремонт</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator__layer">
+                    <h3 class="h3 title">Рассчитать стоимость онлайн</h3>
+                    <div class="divider w-100"></div>
+                    <div class="calculator__layer-inner">
+                        <div class="calculator__layer-form">
+                            <form id="calculator">
+                                <div class="form-inner">
+                                    <div class="form-left">
+                                        <div class="form-top">
+                                            <div class="input-outer">
+                                                <label for="name">Название ЖК</label>
+                                                <input type="text" id="name" placeholder="Название ЖК" class="inpt" />
+                                            </div>
+    
+                                            <div class="input-outer">
+                                                <label for="variant">Вариант отделки</label>
+                                                <select id="variant" class="inpt">
+                                                    <option value="with_finish">С отделкой</option>
+                                                    <option value="without_finish">Без отделки</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="input-outer">
+                                                <label for="area">Площадь квартиры</label>
+                                                <input type="text" id="area" value="" placeholder="50 кв. м" class="inpt" />
+                                            </div>
+                                            <div class="input-outer">
+                                                <span class="calculate-way">Рассчитывается так: <span class="value">90
+                                                        ₽/м²</span></span>
+                                                <div class="divider w-100"></div>
+                                                <span class="min-price">Минимальная стоимость: <span class="value">3 500
+                                                        ₽</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="divider w-100"></div>
+                                        <div class="form-bottom">
+                                            <h3 class="form-bottom-title">Дополнительные услуги</h3>
+                                            <div class="switch-wrapper">
+                                                <div class="switch-outer">
+                                                    <div class="switch-heading">
+                                                        <label class="switch">
+                                                            <input type="checkbox" class="service" data-name="Подробный чертеж" data-price="500" name="1" />
+                                                            <span class="slider"></span>
+                                                        </label>
+                                                        <div class="switch-title">Подробный чертеж</div>
+                                                    </div>
+                                                    <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+                                                </div>
+                                                <div class="switch-outer">
+                                                    <div class="switch-heading">
+                                                        <label class="switch">
+                                                            <input type="checkbox" class="service" data-name="Выезд инженера" data-price="700" name="2" />
+                                                            <span class="slider"></span>
+                                                        </label>
+                                                        <div class="switch-title">Выезд инженера</div>
+                                                    </div>
+                                                    <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Итог -->
+                                    <div class="form-right">
+                                        <div class="form-right-top">
+                                            <h3 class="form-right-title">Итоговая стоимость</h3>
+                                            <div class="divider"></div>
+                                            <div id="summary">
+                                                <p class="color--shaded subtitle">Выбранные параметры:</p>
+                                                <ul id="selectedParams" class="selected-params">
+                                                    <li>Комплексная приемка квартиры 37 м2</li>
+                                                    <li>Подробный чертеж</li>
+                                                </ul>
+                                                <div class="divider"></div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-right-bottom">
+                                            <div class="selected-sum">3500 руб.</div>
+                                            <button type="submit" class="button button--primary w-100">Заказать приёмку</button>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </form>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="acception">
+        <div class="container">
+            <div class="acception__wrapper">
+                <h2 class="title acception-title">Как проходит приемка?</h2>
+                <div class="acception__steps">
+                    <div class="acception__card card">
+                        <div class="acception__card-heading">
+                            <h4 class="acception__card-title">Заявка</h4>
+                            <span class="num">1</span>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="acception__card-descr color--shaded">Свяжемся с вами в кратчайшие сроки для обсуждения деталей</p>
+                    </div>
+                    <div class="acception__card card">
+                        <div class="acception__card-heading">
+                            <h4 class="acception__card-title">Назначение даты</h4>
+                            <span class="num">2</span>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="acception__card-descr color--shaded">Подберем удобное для вас время</p>
+                    </div>
+                    <div class="acception__card card">
+                        <div class="acception__card-heading">
+                            <h4 class="acception__card-title">Выезд эксперта</h4>
+                            <span class="num">3</span>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="acception__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</p>
+                    </div>
+                    <div class="acception__card card">
+                        <div class="acception__card-heading">
+                            <h4 class="acception__card-title">Составление отчета</h4>
+                            <span class="num">4</span>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="acception__card-descr color--shaded">Даем советы и рекомендации
+                            по дальнейшим действиям</p>
+                    </div>
+                </div>
+                <h2 class="title acception-title">Что входит в приемку?</h2>
+                <div class="acception__include">
+                    
+                    <div class="acception__include-card card">
+                        <h4 class="acception__include-card-title">Проверка качества строитльных работ</h4>
+                        <div class="divider"></div>
+                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                    </div>
+                    <div class="acception__include-card card">
+                        <h4 class="acception__include-card-title">Проверка качества ремонтных работ</h4>
+                        <div class="divider"></div>
+                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                    </div>
+                    <div class="acception__include-card card">
+                        <h4 class="acception__include-card-title">Проверка инженерных систем</h4>
+                        <div class="divider"></div>
+                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="deffects">
+        <div class="container">
+            <div class="deffects__inner">
+                <h2 class="title text-center">Дефекты которые могут быть</h2>
+                <div class="deffects__wrapper">
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Трещины</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Деформации</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Царапины</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Трещины</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Деформации</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                    <div class="deffects__card">
+                        <div class="deffects__card-img">
+                            <span class="label">Царапины</span>
+                            <img src="" alt="">
+                        </div>
+                        <div class="deffects__card-info">
+                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
+                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="example">
+        <div class="container">
+            <div class="example__wrapper">
+                <h2 class="title">Пример акта</h2>
+                <div class="example__descr color--shaded">Предлагаем шаблон типового Акта приема-передачи квартиры.
+                    Используя типовой акт, помните, что он не может отражать всех нюансов и конкретных особенностей ваших
+                    договоренностей
+                    с контрагентом. </div>
+                <a href="" class="button button--primary"><span class="font-bold">Скачать пример</span> (акта приемки)
+                    <i class="icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="15" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.3 17.8C21.659 17.8 21.9549 18.0702 21.9953 18.4184L22 18.5V19.9C22 21.0184 21.1258 21.9326 20.0234 21.9964L19.9 22H10.1C8.98162 22 8.06744 21.1258 8.00356 20.0234L8 19.9V18.5C8 18.1134 8.3134 17.8 8.7 17.8C9.05899 17.8 9.35486 18.0702 9.39529 18.4184L9.4 18.5V19.9C9.4 20.259 9.67023 20.5549 10.0184 20.5953L10.1 20.6H19.9C20.259 20.6 20.5549 20.3298 20.5953 19.9816L20.6 19.9V18.5C20.6 18.1134 20.9134 17.8 21.3 17.8ZM15 8C15.3866 8 15.7 8.3134 15.7 8.7V15.4095L16.605 14.505C16.8574 14.2527 17.2544 14.2333 17.529 14.4468L17.595 14.505C17.8473 14.7574 17.8667 15.1544 17.6532 15.429L17.595 15.495L15.495 17.595L15.4642 17.624L15.4167 17.6626L15.3388 17.7127L15.2599 17.7501L15.1862 17.7749L15.0822 17.7952L15 17.8L14.9473 17.798L14.8595 17.7858L14.7815 17.7652L14.7037 17.7344L14.6355 17.6978L14.5683 17.651C14.5461 17.6336 14.525 17.6149 14.505 17.595L12.405 15.495C12.1317 15.2216 12.1317 14.7784 12.405 14.505C12.6574 14.2527 13.0544 14.2333 13.329 14.4468L13.395 14.505L14.3 15.4095V8.7C14.3 8.3134 14.6134 8 15 8Z"
+                                fill="black" />
+                        </svg>
+                    </i></a>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__wrapper">
+                <div class="advantages__info">
+                    <h2 class="title">Почему именно мы?</h2>
+                    <p class="advantages__descr color--shaded">Мы знаем, что заслужить доверие клиентов – это сложный и трудоемкий процесс, в котором нет места фальши и лицемерию. И можно годами быть лучшими, но достаточно одного случая небрежной, халатной работы, чтобы все это рухнуло в один день. Мы гордимся и дорожим своей репутацией, поэтому свою работу мы всегда выполняем хорошо.</p>
+                </div>
+                <div class="advantages__cards">
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Опыт</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/thumb.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Квалификация</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Официально</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/light.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Гарантия</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/eye.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Специальное оборудование</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/lamp.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                    <div class="advantages__card">
+                        <div class="advantages__card-heading">
+                            <div class="advantages__card-title">Поддержка</div>
+                            <div class="advantages__card-icon">
+                                <img src="/assets/img/heart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="advantages__card-descr color--shaded">Проведение осмотра
+                            объекта и выявление дефектов</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="our-works">
+        <div class="container">
+            <div class="our-works__wrapper">
+                <h2 class="title text-center">Наши работы</h2>
+                <div class="swiper-container our-works__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="our-works__card">
+                                <a href="" class="our-works__card-img">
+                                    <img src="/assets/img/image5.png" alt="">
+                                </a>
+                                <div class="our-works__card-title">Приемка квартиры в ЖК</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-works__card">
+                                <a href="" class="our-works__card-img">
+                                    <img src="/assets/img/image5-1.png" alt="">
+                                </a>
+                                <div class="our-works__card-title">Приемка квартиры в ЖК</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-works__card">
+                                <a href="" class="our-works__card-img">
+                                    <img src="/assets/img/image5-2.png" alt="">
+                                </a>
+                                <div class="our-works__card-title">Приемка квартиры в ЖК</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-works__card">
+                                <a href="" class="our-works__card-img">
+                                    <img src="/assets/img/image5-2.png" alt="">
+                                </a>
+                                <div class="our-works__card-title">Приемка квартиры в ЖК</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation our-works__navigation flex">
+                        <button class="swiper-button swiper-button-prev"><img src="/assets/img/arrow-prev.svg" alt=""></button>
+                        <button class="swiper-button swiper-button-next"><img src="/assets/img/arrow-next.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="faq__wrapper">
+                <h2 class="title text-center">Часто задаваемые вопрсоы</h2>
+                <div class="faq__accordion">
+                    <div class="faq__item">
+                        <div class="faq__question"><div class="question">Вопрос 1 </div><i class="icon"><img src="/assets/img/plus.svg" alt=""></i></div>
+                      <div class="faq__answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id, et labore odit velit fugiat illo veniam voluptate. Pariatur cumque a debitis fugiat reprehenderit alias quia odio repudiandae asperiores officia?
+                      </div>
+                    </div>
+                  
+                    <div class="faq__item">
+                      <div class="faq__question"><div class="question">Вопрос 2 </div><i class="icon"><img src="/assets/img/plus.svg" alt=""></i></div>
+                      <div class="faq__answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi magnam aperiam quasi nobis earum consectetur nemo provident quaerat, eligendi iste, neque rerum doloribus similique dolorem quas eaque quisquam quod!
+                      </div>
+                    </div>
+                  
+                    <div class="faq__item">
+                        <div class="faq__question"><div class="question">Вопрос 3 </div><i class="icon"><img src="/assets/img/plus.svg" alt=""></i></div>
+                      <div class="faq__answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi expedita reiciendis quia molestias officia ipsum reprehenderit amet optio voluptates harum facilis nisi aliquam sequi, nostrum unde ducimus illum deserunt?
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="" class="footer__logo">
+                    Контакты                   
+                </a>
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="">Услуги и цены</a></li>
+                            <li><a href="">Кейсы</a></li>
+                            <li><a href="">Доверие</a></li>
+                            <li><a href="">Полезные материалы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__actions">
+                    <button class="button button--primary">Зказать приемку</button>
+                    <a href="" class="link--primary"> </a>
+                    <a href="" class="link--primary"> </a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer__bottom">
+                <div class="col">&copy; «Название» <span id="current-year"></span></div>
+                <div class="col"><a href="">Политика конфиденциальности</a></div>
+                <div class="col"><a href="">Согласие на обработку персональных данных</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- libs -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="/assets/lib/swiper/swiper-bundle.min.js"></script>
+    <!-- project's -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
