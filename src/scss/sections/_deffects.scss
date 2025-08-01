@@ -41,3 +41,26 @@
         }
     }
 }
+.deffects__slider-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024.99px) {
+    .deffects {
+        margin-top: 60px;
+    }
+    .deffects__card {
+        width: calc(50% - 10px);
+    }
+    
+}
+
+@media screen and (max-width: 767.99px) {
+    .deffects__slider-mobile {
+        display: block;
+        margin-top: 25px;
+    }
+    .deffects__wrapper {
+        display: none;
+    }
+}

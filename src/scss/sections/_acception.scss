@@ -59,3 +59,50 @@
         }
     }
 }
+@media screen and (max-width: 1199.99px) {
+    .acception {
+        padding: 70px 0 90px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .acception__wrapper {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1024.99px) {
+    .acception__wrapper {
+        width: 80%;
+    }
+    .acception {
+        padding: 50px 0 60px;
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .acception {
+        background-image: none;
+        background-color: var(--color-gray-100);
+        &__wrapper {
+            width: 100%;
+        }
+        &__steps {
+            margin-top: 80px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 640.99px) {
+    .acception {
+        padding: 80px 0;
+        &__steps {
+            margin-top: 25px;
+            gap: 15px;
+            margin-bottom: 80px;
+        }
+        &__card {
+            flex: 1 1 100%;
+        }
+    }
+}

@@ -22,3 +22,48 @@
         margin-top: 15px;
     }
 }
+
+@media screen and (max-width: 1199.99px) {
+    .example {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .example__wrapper {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 1024.99px) {
+    .example {
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+    .example__wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .example {
+        height: 705px;
+        background-position: 80%;
+        > .container {
+            display: flex;
+            height: 100%;
+        }
+        &__wrapper {
+            margin-top: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .example {
+        padding: 40px 0;
+    }
+    .example__wrapper {
+        width: 100%;
+        padding: 25px;
+    }
+}

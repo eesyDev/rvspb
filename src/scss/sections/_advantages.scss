@@ -35,3 +35,36 @@
         }
     }
 }
+
+@media screen and (max-width: 1199.99px) {
+    .advantages__wrapper {
+        gap: 50px;
+    }
+    .advantages__info {
+        width: calc(40% - 25px);
+    }
+    .advantages__cards {
+        width: calc(60% - 25px);
+    }
+}
+
+@media screen and (max-width: 1024.99px) {
+    .advantages {
+        padding: 60px 0;
+    }
+    .advantages__wrapper {
+        flex-wrap: wrap;
+    }
+    .advantages__info {
+        width: 100%;
+    }
+    .advantages__cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640.99px) {
+    .advantages__card-icon {
+        display: none;
+    }
+}

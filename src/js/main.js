@@ -18,8 +18,22 @@ jQuery(document).ready(function ($) {
             }
         })
     } catch (err) {
-        window.frontpage_blog_slider = false;
+        window.frontpage_work_slider = false;
         
+    }
+
+    try {
+        window.deffectsSlider = new Swiper('.deffects__slider-mobile', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            breakpoints: {
+              768: {
+                enabled: false, 
+              }
+            }
+          });
+    } catch(err) {
+        window.deffectsSlider = false;
     }
 
     $('.faq__question').click(function () {
@@ -34,4 +48,12 @@ jQuery(document).ready(function ($) {
       });
 
       $('#current-year').text(new Date().getFullYear());
+
+      var burger = $('.burger');
+      var  slideMenu = $('.header__nav-outer');
+
+    burger.click(function() {
+        burger.toggleClass('open');
+        slideMenu.toggleClass('active');
+    });
 })

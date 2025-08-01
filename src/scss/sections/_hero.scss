@@ -25,8 +25,73 @@
         flex-direction: column;
         gap: 15px;
         max-width: 330px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            &:before {
+                content: url(../img/check.svg);
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+        }
+        
     }
     .button {
         margin-top: 49px;
+    }
+}
+
+@media screen and (max-width: 1199.99px) {
+    .hero {
+        padding: 70px 0;
+        background-position: bottom;
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .hero {
+        min-height: 770px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px 0;
+        display: flex;
+        background-position: 86%;
+        &__offer {
+            width: 100%;
+            margin: 0 auto;
+        }
+        > .container {
+            margin-top: auto;
+        }
+        &__offer {
+            padding: 25px;
+        }
+        &__description {
+            font-size: 14px;
+        }
+        &__list {
+            margin-top: 25px;
+        }
+        .divider {
+            margin-top: 25px;
+        }
+        .button {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 640.99px) {
+    .hero {
+        background-image: url('../img/hero-mobile.png');
+        background-position: 80% 30%;
+    }
+}
+
+@media screen and (max-width: 480.99px) {
+    .hero {
+        background-position: 80% 123%;
+        background-size: cover;
     }
 }
