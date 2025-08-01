@@ -13,6 +13,10 @@
         display: flex;
     }
     &__nav {
+        font-weight: 700;
+        ul {
+            display: flex;
+        }
         li {
             padding: 10px 20px;
             border-radius: 25px;
