@@ -33,7 +33,7 @@
                         </nav>
                     </div>
                     <div class="header__actions">
-                        <button class="button button--primary">Зказать приемку</button>
+                        <a href="#acception" class="button button--primary open-dialog">Зказать приемку</ф>
                         <a href="" class="link--primary"> </a>
                         <a href="" class="link--primary"> </a>
                     </div>
@@ -50,17 +50,16 @@
                         Помощь в приемке квартир у застройщиков
                     </h1>
                     <p class="hero__description">
-                        Проверка квартиры — экспертная помощь перед приёмкой квартиры у застройщика
+                        Приемка профессионалами - важный этап перед подписанием акта приема-передачи квартиры.
                     </p>
                     <div class="divider w-100"></div>
                     <ul class="hero__list">
-                        <li>Проверим жильё на соответствие
-                            строительным нормам и вашему договору</li>
-                        <li>Составим список найденных нарушений</li>
-                        <li>Проконсультируем по выявленным дефектам</li>
+                        <li>Проверим жилье на соответствие строительным нормам</li>
+                        <li>Составим список найденных нарушений </li>
+                        <li>Проконсультируем по устранению дефектов</li>
                     </ul>
                     <div class="divider w-100"></div>
-                    <button class="button button--primary w-100">Зказать приемку</button>
+                    <a href="#acception" class="button button--primary w-100 open-dialog">Зказать приемку</a>
                 </div>
             </div>
         </div>
@@ -72,19 +71,21 @@
                     <h2 class="title h2">Зачем нужна помощь в приемке квартиры:</h2>
                     <ul class="list calculator__list">
                         <li>
-                            <span class="list-title">Выявление скрытых дефектов:</span>
-                            <span class="list-descr">Профессионалы используют специальное оборудование для выявления скрытых
-                                проблем</span>
+                            <span class="list-title">Выявление скрытых дефектов</span>
+                            <span class="list-descr">Профессиональный осмотр квартиры позволяет обнаружить строительные
+                                нарушения, которые невозможно заметить без профессионального оборудования.</span>
                         </li>
                         <li>
-                            <span class="list-title">Экономия времени и денег:</span>
-                            <span class="list-descr">Недостатки, выявленные на этапе приемки, могут быть устранены
-                                застройщиком, что сэкономит ваши деньги и время на последующий ремонт</span>
+                            <span class="list-title">Экономия времени и денег</span>
+                            <span class="list-descr">Приемка квартиры с экспертом помогает избежать излишних расходов на
+                                ремонт. Все выявленные недостатки фиксируются в акте осмотра, и застройщик обязан устранить
+                                их за свой счёт.</span>
                         </li>
                         <li>
-                            <span class="list-title">Юридическая защита:</span>
-                            <span class="list-descr">Могут быть устранены застройщиком, что сэкономит ваши деньги и время на
-                                последующий ремонт</span>
+                            <span class="list-title">Юридическая защита</span>
+                            <span class="list-descr">При возникновении спора с застройщиком, вы можете использовать акт
+                                осмотра квартиры с дефектами, экспертное заключение, которое можно использовать в суде, у
+                                нотариуса или при подаче претензий.</span>
                         </li>
                     </ul>
                 </div>
@@ -129,22 +130,248 @@
                                                 <div class="switch-outer">
                                                     <div class="switch-heading">
                                                         <label class="switch">
-                                                            <input type="checkbox" class="service" data-name="Подробный чертеж" data-price="500" name="1" />
+                                                            <input type="checkbox" class="service"
+                                                                data-name="Подробный чертеж" data-price="500" name="1"
+                                                                data-panel-for="1" />
                                                             <span class="slider"></span>
                                                         </label>
                                                         <div class="switch-title">Подробный чертеж</div>
                                                     </div>
                                                     <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
                                                 </div>
+    
                                                 <div class="switch-outer">
                                                     <div class="switch-heading">
                                                         <label class="switch">
-                                                            <input type="checkbox" class="service" data-name="Выезд инженера" data-price="700" name="2" />
+                                                            <input type="checkbox" class="service"
+                                                                data-name="Выезд инженера" data-price="700" name="2"
+                                                                data-panel-for="1" />
                                                             <span class="slider"></span>
                                                         </label>
                                                         <div class="switch-title">Выезд инженера</div>
                                                     </div>
                                                     <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+    
+                                                </div>
+                                                <!-- ПАНЕЛЬ ВЫПАДАЮЩЕГО СПИСКА -->
+                                                <div class="switch-panel panel panel--toggles" aria-hidden="true">
+                                                    <div class="panel__row">
+                                                        <div class="switcher-outer">
+                                                            <div class="switcher-heading flex-between">
+                                                                <div class="flex gap-10 items-center">
+                                                                    <label class="panel-toggle switcher">
+                                                                        <input type="checkbox" class="subservice"
+                                                                            data-name="План розеток" data-price="5"
+                                                                            data-unit="руб/м²" disabled>
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <span class="panel-toggle__title">План розеток</span>
+                                                                </div>
+    
+                                                                <span class="panel__price">5 руб/м²</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel__row">
+                                                        <div class="switcher-outer">
+                                                            <div class="switcher-heading flex-between">
+                                                                <div class="flex gap-10 items-center">
+                                                                    <label class="panel-toggle switcher">
+                                                                        <input type="checkbox" class="subservice"
+                                                                            data-name="План розеток" data-price="5"
+                                                                            data-unit="руб/м²" disabled>
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <span class="panel-toggle__title">План освещения</span>
+                                                                </div>
+    
+                                                                <span class="panel__price">5 руб/м²</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel__row">
+                                                        <div class="switcher-outer">
+                                                            <div class="switcher-heading flex-between">
+                                                                <div class="flex gap-10 items-center">
+                                                                    <label class="panel-toggle switcher">
+                                                                        <input type="checkbox" class="subservice"
+                                                                            data-name="План розеток" data-price="5"
+                                                                            data-unit="руб/м²" disabled>
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <span class="panel-toggle__title">Составление плана
+                                                                        квартиры</span>
+                                                                </div>
+    
+                                                                <span class="panel__price">5 руб/м²</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="panel__row">
+                                                        <div class="switcher-outer">
+                                                            <div class="switcher-heading flex-between">
+                                                                <div class="flex gap-10 items-center">
+                                                                    <label class="panel-toggle switcher">
+                                                                        <input type="checkbox" class="subservice"
+                                                                            data-name="План розеток" data-price="5"
+                                                                            data-unit="руб/м²" disabled>
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <span class="panel-toggle__title">Составление плана
+                                                                        квартиры</span>
+                                                                </div>
+    
+                                                                <span class="panel__price">5 руб/м²</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ПАНЕЛЬ -->
+                                                <div class="switch-panel panel panel--controls" aria-hidden="true">
+                                                    <div class="field-wrapper">
+                                                        <div class="field">
+                                                            <label class="field__label" for="dev-name">Площадь
+                                                                квартиры</label>
+                                                            <input id="dev-name" class="inpt field__control" type="text"
+                                                                placeholder="Укажите площадь" disabled>
+                                                        </div>
+                                                        <div class="field">
+                                                            <div class="field__label">Количество комнат</div>
+                                                            <div class="segmented" role="group"
+                                                                aria-label="Количество комнат">
+                                                                <input type="radio" name="rooms" id="rooms-studio"
+                                                                    class="segmented__input" value="studio" disabled>
+                                                                <label for="rooms-studio"
+                                                                    class="segmented__btn">Студия</label>
+    
+                                                                <input type="radio" name="rooms" id="rooms-1"
+                                                                    class="segmented__input" value="1" disabled>
+                                                                <label for="rooms-1" class="segmented__btn">1</label>
+    
+                                                                <input type="radio" name="rooms" id="rooms-2"
+                                                                    class="segmented__input" value="2" disabled>
+                                                                <label for="rooms-2" class="segmented__btn">2</label>
+    
+                                                                <input type="radio" name="rooms" id="rooms-3"
+                                                                    class="segmented__input" value="3" disabled>
+                                                                <label for="rooms-3" class="segmented__btn">3</label>
+    
+                                                                <input type="radio" name="rooms" id="rooms-4"
+                                                                    class="segmented__input" value="4" disabled>
+                                                                <label for="rooms-4" class="segmented__btn">4</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <label class="field__label" for="dev-name">Название ЖК</label>
+                                                            <input id="dev-name" class="inpt field__control" type="text"
+                                                                placeholder="Укажите название" disabled>
+                                                        </div>
+                                                        <div class="field">
+                                                            <label class="field__label" for="dev-name">Укажите дату и
+                                                                время</label>
+                                                            <div class="field-sm">
+    
+                                                                <input id="dev-name" class="inpt field__control" type="date"
+                                                                    placeholder="Укажите адрес" disabled>
+                                                            </div>
+                                                            <div class="field-sm">
+                                                                <input id="dev-name" class="inpt field__control" type="time"
+                                                                    placeholder="Укажите адрес" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <label class="field__label" for="phone">Телефон</label>
+                                                            <input id="phone" class="inpt field__control" type="tel"
+                                                                placeholder="+7" disabled>
+                                                        </div>
+                                                        <div class="field">
+                                                            Итого
+                                                            <span class="result"> 1500 руб</ы>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- чекбоксы в строку (мини-услуги внутри панели) -->
+                                                    <div class="field">
+                                                        <div class="field__label">Дополнительные услуги</div>
+                                                        <div class="field-wrapper">
+                                                            <div class="field">
+                                                                <div class="switcher-outer">
+                                                                    <div class="switcher-heading">
+                                                                        <label class="switcher">
+                                                                            <input type="checkbox" data-name="Замер площади"
+                                                                                data-price="500" name="1"
+                                                                                data-panel-for="1" />
+                                                                            <span class="slider"></span>
+                                                                        </label>
+                                                                        <div class="switch-title">Замер площади</div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                        elit. Minima quisquam consectetur excepturi</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <div class="switcher-outer">
+                                                                    <div class="switcher-heading">
+                                                                        <label class="switcher">
+                                                                            <input type="checkbox" data-name="Замер площади"
+                                                                                data-price="500" name="1"
+                                                                                data-panel-for="1" />
+                                                                            <span class="slider"></span>
+                                                                        </label>
+                                                                        <div class="switch-title">Замер площади</div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                        elit. Minima quisquam consectetur excepturi</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <div class="switcher-outer">
+                                                                    <div class="switcher-heading">
+                                                                        <label class="switcher">
+                                                                            <input type="checkbox" data-name="Замер площади"
+                                                                                data-price="500" name="1"
+                                                                                data-panel-for="1" />
+                                                                            <span class="slider"></span>
+                                                                        </label>
+                                                                        <div class="switch-title">Замер площади</div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                        elit. Minima quisquam consectetur excepturi</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <div class="switcher-outer">
+                                                                    <div class="switcher-heading">
+                                                                        <label class="switcher">
+                                                                            <input type="checkbox" data-name="Замер площади"
+                                                                                data-price="500" name="1"
+                                                                                data-panel-for="1" />
+                                                                            <span class="slider"></span>
+                                                                        </label>
+                                                                        <div class="switch-title">Замер площади</div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                        elit. Minima quisquam consectetur excepturi</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <div class="switcher-outer">
+                                                                    <div class="switcher-heading">
+                                                                        <label class="switcher">
+                                                                            <input type="checkbox" data-name="Замер площади"
+                                                                                data-price="500" name="1"
+                                                                                data-panel-for="1" />
+                                                                            <span class="slider"></span>
+                                                                        </label>
+                                                                        <div class="switch-title">Замер площади</div>
+                                                                    </div>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                        elit. Minima quisquam consectetur excepturi</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,12 +388,13 @@
                                                     <li>Подробный чертеж</li>
                                                 </ul>
                                                 <div class="divider"></div>
-                                                
+    
                                             </div>
                                         </div>
                                         <div class="form-right-bottom">
                                             <div class="selected-sum">3500 руб.</div>
-                                            <button type="submit" class="button button--primary w-100">Заказать приёмку</button>
+                                            <a href="#acception" type="submit"
+                                                class="button button--primary w-100 open-dialog">Заказать приёмку</a>
                                         </div>
     
                                     </div>
@@ -191,7 +419,8 @@
                             <span class="num">1</span>
                         </div>
                         <div class="divider"></div>
-                        <p class="acception__card-descr color--shaded">Свяжемся с вами в кратчайшие сроки для обсуждения деталей</p>
+                        <p class="acception__card-descr color--shaded">Оставьте свои контакты на сайте и мы свяжемся с вами в течении 15 минут или позвоните нам по номеру +7 (ххх) хх-хх
+                        </p>
                     </div>
                     <div class="acception__card card">
                         <div class="acception__card-heading">
@@ -199,7 +428,7 @@
                             <span class="num">2</span>
                         </div>
                         <div class="divider"></div>
-                        <p class="acception__card-descr color--shaded">Подберем удобное для вас время</p>
+                        <p class="acception__card-descr color--shaded">Подберем для вас удобное время</p>
                     </div>
                     <div class="acception__card card">
                         <div class="acception__card-heading">
@@ -207,36 +436,35 @@
                             <span class="num">3</span>
                         </div>
                         <div class="divider"></div>
-                        <p class="acception__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</p>
+                        <p class="acception__card-descr color--shaded">В назначенное время к Вам приедет эксперт с необходимым оборудованием и проведет осмотр</p>
                     </div>
                     <div class="acception__card card">
                         <div class="acception__card-heading">
-                            <h4 class="acception__card-title">Составление отчета</h4>
+                            <h4 class="acception__card-title">Составление акта</h4>
                             <span class="num">4</span>
                         </div>
                         <div class="divider"></div>
-                        <p class="acception__card-descr color--shaded">Даем советы и рекомендации
-                            по дальнейшим действиям</p>
+                        <p class="acception__card-descr color--shaded">Укажем все недочеты  и проконсультируем по дальнейшим действиям</p>
                     </div>
                 </div>
                 <h2 class="title acception-title">Что входит в приемку?</h2>
                 <div class="acception__include">
                     
                     <div class="acception__include-card card">
-                        <h4 class="acception__include-card-title">Проверка качества строитльных работ</h4>
+                        <h4 class="acception__include-card-title">Проверка строительных и монтажных работ
+                        </h4>
                         <div class="divider"></div>
-                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                        <p class="acception__include-card-descr color--shaded">Проводится визуальный осмотр стен, потолка и пола на наличие пустот, трещин, отклонений от горизонтали, а также качество установки дверей и окон. Проверяется герметичность оконных блоков, целостность стеклопакетов.</p>
                     </div>
                     <div class="acception__include-card card">
-                        <h4 class="acception__include-card-title">Проверка качества ремонтных работ</h4>
+                        <h4 class="acception__include-card-title">Проверка качества отделочных работ</h4>
                         <div class="divider"></div>
-                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                        <p class="acception__include-card-descr color--shaded">Проверяется отделка в квартире от застройщика: пол, потолок, стены. Сравнивается с требованиями СНИП, ГОСТ, СП. Выявляются дефекты, которые должен устранить застройщик.</p>
                     </div>
                     <div class="acception__include-card card">
                         <h4 class="acception__include-card-title">Проверка инженерных систем</h4>
                         <div class="divider"></div>
-                        <p class="acception__include-card-descr color--shaded">Проверку соответствия выполненных работ проекту, требованиям нормативной документации, а также оценку качества строительных материалов и соблюдения технологий</p>
+                        <p class="acception__include-card-descr color--shaded">С использованием специализированного оборудования проверяется: работа выключателей, розеток, автоматов; наличие заземления; работоспособность сантехники; исправность слива, отсутствие протечек.</p>
                     </div>
                 </div>
                 
@@ -246,7 +474,7 @@
     <section class="deffects">
         <div class="container">
             <div class="deffects__inner">
-                <h2 class="title text-center">Дефекты которые могут быть</h2>
+                <h2 class="title text-center">Дефекты, которые могут быть у Вас</h2>
                 <div class="deffects__wrapper">
                     <div class="deffects__card">
                         <div class="deffects__card-img">
@@ -254,18 +482,18 @@
                             <img src="" alt="">
                         </div>
                         <div class="deffects__card-info">
-                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                            <h4 class="deffects__card-title">Отклонение пола и стен от горизонтали</h4>
+                            <p class="deffects__card-descr color--shaded">Из-за отклонений от строительных норм возникают зазоры между полом и плинтусом, проседание и деформация покрытия. Вследствие снижается срок эксплуатации и увеличиваются расходы на ремонт из-за дополнительное выравнивание.</p>
                         </div>
                     </div>
                     <div class="deffects__card">
                         <div class="deffects__card-img">
-                            <span class="label">Деформации</span>
+                            <span class="label">Трещины</span>
                             <img src="" alt="">
                         </div>
                         <div class="deffects__card-info">
-                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                            <h4 class="deffects__card-title">Трещины в оконных рамах</h4>
+                            <p class="deffects__card-descr color--shaded">Приводит к продуванию помещения и снижению герметичности, что негативно сказывается на комфорте жизни в квартире</p>
                         </div>
                     </div>
                     <div class="deffects__card">
@@ -274,8 +502,8 @@
                             <img src="" alt="">
                         </div>
                         <div class="deffects__card-info">
-                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                            <h4 class="deffects__card-title">Пониженная температура стен</h4>
+                            <p class="deffects__card-descr color--shaded">Промерзание фасадных стен ведёт к повышенной влажности, конденсату, плесени и порче отделки, что ухудшает состояние жилья</p>
                         </div>
                     </div>
                     <div class="deffects__card">
@@ -284,8 +512,8 @@
                             <img src="" alt="">
                         </div>
                         <div class="deffects__card-info">
-                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                            <h4 class="deffects__card-title">Неисправные краны, радиаторы, счетчики</h4>
+                            <p class="deffects__card-descr color--shaded">Протечки, неработающие краны, радиаторы и счётчики — частые дефекты, влияющие на работоспособность коммуникаций и вызывающие проблемы с передачей показаний и коммунальными услугами.</p>
                         </div>
                     </div>
                     <div class="deffects__card">
@@ -294,8 +522,8 @@
                             <img src="" alt="">
                         </div>
                         <div class="deffects__card-info">
-                            <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                            <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                            <h4 class="deffects__card-title">Пустоты под плиткой</h4>
+                            <p class="deffects__card-descr color--shaded">Пустоты, отслоение, трещины и вздутие плитки указывают на нарушения при монтаже. Это влияет на срок службы, требует замены и увеличивает стоимость отделочных работ.</p>
                         </div>
                     </div>
                     <div class="deffects__card">
@@ -317,28 +545,8 @@
                                 <img src="" alt="">
                             </div>
                             <div class="deffects__card-info">
-                                <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                                <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
-                            </div>
-                        </div>
-                        <div class="deffects__card swiper-slide">
-                            <div class="deffects__card-img">
-                                <span class="label">Деформации</span>
-                                <img src="" alt="">
-                            </div>
-                            <div class="deffects__card-info">
-                                <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                                <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
-                            </div>
-                        </div>
-                        <div class="deffects__card swiper-slide">
-                            <div class="deffects__card-img">
-                                <span class="label">Царапины</span>
-                                <img src="" alt="">
-                            </div>
-                            <div class="deffects__card-info">
-                                <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                                <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                                <h4 class="deffects__card-title">Отклонение пола и стен от горизонтали</h4>
+                                <p class="deffects__card-descr color--shaded">Из-за отклонений от строительных норм возникают зазоры между полом и плинтусом, проседание и деформация покрытия. Вследствие снижается срок эксплуатации и увеличиваются расходы на ремонт из-за дополнительное выравнивание.</p>
                             </div>
                         </div>
                         <div class="deffects__card swiper-slide">
@@ -347,8 +555,28 @@
                                 <img src="" alt="">
                             </div>
                             <div class="deffects__card-info">
-                                <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                                <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                                <h4 class="deffects__card-title">Трещины в оконных рамах</h4>
+                                <p class="deffects__card-descr color--shaded">Приводит к продуванию помещения и снижению герметичности, что негативно сказывается на комфорте жизни в квартире</p>
+                            </div>
+                        </div>
+                        <div class="deffects__card swiper-slide">
+                            <div class="deffects__card-img">
+                                <span class="label">Царапины</span>
+                                <img src="" alt="">
+                            </div>
+                            <div class="deffects__card-info">
+                                <h4 class="deffects__card-title">Пониженная температура стен</h4>
+                                <p class="deffects__card-descr color--shaded">Промерзание фасадных стен ведёт к повышенной влажности, конденсату, плесени и порче отделки, что ухудшает состояние жилья</p>
+                            </div>
+                        </div>
+                        <div class="deffects__card swiper-slide">
+                            <div class="deffects__card-img">
+                                <span class="label">Трещины</span>
+                                <img src="" alt="">
+                            </div>
+                            <div class="deffects__card-info">
+                                <h4 class="deffects__card-title">Неисправные краны, радиаторы, счетчики</h4>
+                                <p class="deffects__card-descr color--shaded">Протечки, неработающие краны, радиаторы и счётчики — частые дефекты, влияющие на работоспособность коммуникаций и вызывающие проблемы с передачей показаний и коммунальными услугами.</p>
                             </div>
                         </div>
                         <div class="deffects__card swiper-slide">
@@ -357,8 +585,8 @@
                                 <img src="" alt="">
                             </div>
                             <div class="deffects__card-info">
-                                <h4 class="deffects__card-title">Недостатки, которые легко обнаружить при обычном осмотре</h4>
-                                <p class="deffects__card-descr color--shaded">Например, трещины на поверхности металла, царапины, заусенцы, складки, выступы, деформации, различимые визуально. </p>
+                                <h4 class="deffects__card-title">Пустоты под плиткой</h4>
+                                <p class="deffects__card-descr color--shaded">Пустоты, отслоение, трещины и вздутие плитки указывают на нарушения при монтаже. Это влияет на срок службы, требует замены и увеличивает стоимость отделочных работ.</p>
                             </div>
                         </div>
                         <div class="deffects__card swiper-slide">
@@ -412,8 +640,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">Все наши специалисты имеют опыт работы более 5 лет и отвечают качество выполнения осмотра.</div>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-heading">
@@ -423,8 +650,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">Наша команда включает инженеров, имеющих профильное образование, сертификаты, а также регистрацию в реестре специалистов НОПРИЗ / НОСТРОЙ.</div>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-heading">
@@ -434,8 +660,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">После осмотра квартиры вы получаете акт, содержащий все выявленные недочеты. Этот документ можно использовать в суде и дрругих инстанциях.</div>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-heading">
@@ -445,8 +670,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">Приемка проводится в соответствии с действующими строительными нормами и техническими стандартами, СНиП и СанПиН. В случае обнаружения значительных отклонений после получения ключей, мы поможем составить претензию, дополнить акт, передать данные застройщику, потом выполним повторную приемку.</div>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-heading">
@@ -456,8 +680,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">Мы применяем профессиональное оборудование для выявления скрытых дефектов, включая тепловизоры, лазерные приборы, средства для обследования электромагнитного излучения, радиации, влажности.</div>
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__card-heading">
@@ -467,8 +690,7 @@
                             </div>
                         </div>
                         <div class="divider"></div>
-                        <div class="advantages__card-descr color--shaded">Проведение осмотра
-                            объекта и выявление дефектов</div>
+                        <div class="advantages__card-descr color--shaded">На всех этапах с вами работают наши опытные специалисты. В случае споров с застройщиком мы подготовим все необходимые документы, поможем с юридическим сопровождением, и предоставим заключение, имеющее официальную силу.</div>
                     </div>
                 </div>
                 
@@ -523,34 +745,63 @@
         </div>
     </section>
     <section class="faq">
-        <div class="container">
-            <div class="faq__wrapper">
-                <h2 class="title text-center">Часто задаваемые вопрсоы</h2>
-                <div class="faq__accordion">
-                    <div class="faq__item">
-                        <div class="faq__question"><div class="question">Вопрос 1 </div><i class="icon"><img src="assets/img/plus.svg" alt=""></i></div>
-                      <div class="faq__answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id, et labore odit velit fugiat illo veniam voluptate. Pariatur cumque a debitis fugiat reprehenderit alias quia odio repudiandae asperiores officia?
-                      </div>
-                    </div>
-                  
-                    <div class="faq__item">
-                      <div class="faq__question"><div class="question">Вопрос 2 </div><i class="icon"><img src="assets/img/plus.svg" alt=""></i></div>
-                      <div class="faq__answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi magnam aperiam quasi nobis earum consectetur nemo provident quaerat, eligendi iste, neque rerum doloribus similique dolorem quas eaque quisquam quod!
-                      </div>
-                    </div>
-                  
-                    <div class="faq__item">
-                        <div class="faq__question"><div class="question">Вопрос 3 </div><i class="icon"><img src="assets/img/plus.svg" alt=""></i></div>
-                      <div class="faq__answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi expedita reiciendis quia molestias officia ipsum reprehenderit amet optio voluptates harum facilis nisi aliquam sequi, nostrum unde ducimus illum deserunt?
-                      </div>
-                    </div>
-                  </div>
-                  
+      <div class="container">
+        <div class="faq__wrapper">
+          <h2 class="title text-center">Часто задаваемые вопрсоы</h2>
+          <div class="faq__accordion">
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="question">Из чего складывается стоимость за приемку квартиры?</div><i class="icon"><img
+                    src="assets/img/plus.svg" alt=""></i>
+              </div>
+              <div class="faq__answer">
+                Стоимость зависит от нескольких факторов: площадь, вид отделки, приобретаемых дополнительных услуг и
+                локации.
+              </div>
             </div>
+    
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="question">В течение какого времени после заселения можно заказать специализированную приемку?
+                </div><i class="icon"><img src="assets/img/plus.svg" alt=""></i>
+              </div>
+              <div class="faq__answer">
+                Пригласить специалиста по приемке можно в течении всего гарантийного срока - чаще всего 1 год. В течении
+                этого срока можно требоват от застройщика устранение недостатков.
+              </div>
+            </div>
+    
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="question">Сколько по времени занимает приемка квартиры?</div><i class="icon"><img
+                    src="assets/img/plus.svg" alt=""></i>
+              </div>
+              <div class="faq__answer">
+                Приемка квартиры до 50 кв.м. занимает около 1 часа, более 50 кв.м - от 1,5 часов.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="question">Какую юридическую силу имеет заключение эксперта?</div><i class="icon"><img
+                    src="assets/img/plus.svg" alt=""></i>
+              </div>
+              <div class="faq__answer">
+                С помощью акта независимой проверки, застройщик примет вашу претензию.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="question">В течение какого времени необходимо подписать с застройщиком акт приема-передачи
+                  квартиры?</div><i class="icon"><img src="assets/img/plus.svg" alt=""></i>
+              </div>
+              <div class="faq__answer">
+                Необходимо принять объект в течении 60-ти дней после оповещения.
+              </div>
+            </div>
+          </div>
+    
         </div>
+      </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -583,6 +834,40 @@
             </div>
         </div>
     </footer>
+    <div class="dialogs">
+        <div class="close-bg"></div>
+        <div class="flex-popup">
+            <div class="popup" id="acception">
+                <div class="popup__wrapper">
+                    <div class="close">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9225 1.59727C16.2295 1.26567 16.2295 0.727334 15.9225 0.395734C15.5131 0.0641337 15.0013 0.0641337 14.6943 0.395734L8.45122 6.59072L2.31048 0.395734C1.90109 0.0641337 1.38937 0.0641337 1.08233 0.395734C0.775292 0.727334 0.775292 1.26567 1.08233 1.59727L7.32541 7.79225L1.08233 13.9883C0.775292 14.3199 0.775292 14.8572 1.08233 15.1888C1.38937 15.5214 1.90109 15.5214 2.31048 15.1888L8.45122 8.99379L14.6943 15.1888C15.0013 15.5214 15.5131 15.5214 15.9225 15.1888C16.2295 14.8572 16.2295 14.3199 15.9225 13.9883L9.67937 7.79225L15.9225 1.59727Z" fill="black"/>
+                        </svg>                        
+                    </div>
+                    <div class="popup__content">
+                        <h3 class="h1 ">Заказать приемку</h3>
+                        <p class="sub paragraph">Укажите ваш контактный телефон, чтобы наш специалист мог связаться с вами и согласовать удобное время для оформления приёмки квартиры.</p>
+                        <form method="POST" class="popup__form">
+                            <div class="input-group w-1_3">
+                                <input type="text" id="name" name="name" class="input inpt-name" data-required="true" data-error="Please fill this field" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-group w-1_3">
+                                <input type="tel" id="tel" name="tel" class="input inpt-tel" data-required="true"
+                                    data-error="Please fill this field" placeholder="Номер телефона">
+                            </div>
+                            <button class="button button--primary" type="submit">
+                                Зказать приемку
+                            </button>
+                            <div class="input-group w-full">
+                                <p class="form-description">Нажимая на кнопку вы соглашаетесь на <a href="#policy" class="underlined">обработку персональных данных</a></p>
+                            </div>
+                            <input type="hidden" name="action" value="call">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- libs -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
