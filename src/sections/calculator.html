@@ -40,7 +40,9 @@
                                         <div class="input-outer">
                                             <label for="variant">Вариант отделки</label>
                                             <select id="variant" class="inpt">
-                                                <option value="with_finish">С отделкой</option>
+                                                <option value="finish">С отделкой</option>
+                                                <option value="rought">Черновая</option>
+                                                <option value="fine">Чистовая</option>
                                                 <option value="without_finish">Без отделки</option>
                                             </select>
                                         </div>
@@ -65,7 +67,7 @@
                                                 <div class="switch-heading">
                                                     <label class="switch">
                                                         <input type="checkbox" class="service"
-                                                            data-name="Подробный чертеж" data-price="500" name="1"
+                                                            data-name="Подробный чертеж" data-price="2000" name="1"
                                                             data-panel-for="1" />
                                                         <span class="slider"></span>
                                                     </label>
@@ -78,7 +80,7 @@
                                                 <div class="switch-heading">
                                                     <label class="switch">
                                                         <input type="checkbox" class="service"
-                                                            data-name="Выезд инженера" data-price="700" name="2"
+                                                            data-name="Выезд инженера" data-price="1000" name="2"
                                                             data-panel-for="1" />
                                                         <span class="slider"></span>
                                                     </label>
@@ -112,14 +114,14 @@
                                                             <div class="flex gap-10 items-center">
                                                                 <label class="panel-toggle switcher">
                                                                     <input type="checkbox" class="subservice"
-                                                                        data-name="План розеток" data-price="5"
+                                                                        data-name="План розеток" data-price="15"
                                                                         data-unit="руб/м²" disabled>
                                                                     <span class="slider"></span>
                                                                 </label>
                                                                 <span class="panel-toggle__title">План освещения</span>
                                                             </div>
 
-                                                            <span class="panel__price">5 руб/м²</span>
+                                                            <span class="panel__price">15 руб/м²</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -129,7 +131,7 @@
                                                             <div class="flex gap-10 items-center">
                                                                 <label class="panel-toggle switcher">
                                                                     <input type="checkbox" class="subservice"
-                                                                        data-name="План розеток" data-price="5"
+                                                                        data-name="План розеток" data-price="10"
                                                                         data-unit="руб/м²" disabled>
                                                                     <span class="slider"></span>
                                                                 </label>
@@ -137,7 +139,7 @@
                                                                     квартиры</span>
                                                             </div>
 
-                                                            <span class="panel__price">5 руб/м²</span>
+                                                            <span class="panel__price">15 руб/м²</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -148,7 +150,7 @@
                                                             <div class="flex gap-10 items-center">
                                                                 <label class="panel-toggle switcher">
                                                                     <input type="checkbox" class="subservice"
-                                                                        data-name="План розеток" data-price="5"
+                                                                        data-name="План розеток" data-price="25"
                                                                         data-unit="руб/м²" disabled>
                                                                     <span class="slider"></span>
                                                                 </label>
@@ -156,7 +158,7 @@
                                                                     квартиры</span>
                                                             </div>
 
-                                                            <span class="panel__price">5 руб/м²</span>
+                                                            <span class="panel__price">25 руб/м²</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -204,15 +206,16 @@
                                                     <div class="field">
                                                         <label class="field__label" for="dev-name">Укажите дату и
                                                             время</label>
-                                                        <div class="field-sm">
-
-                                                            <input id="dev-name" class="inpt field__control" type="date"
-                                                                placeholder="Укажите адрес" disabled>
-                                                        </div>
-                                                        <div class="field-sm">
-                                                            <input id="dev-name" class="inpt field__control" type="time"
-                                                                placeholder="Укажите адрес" disabled>
-                                                        </div>
+                                                            <div class="flex flex-between">
+                                                                <div class="field-sm">
+                                                                    <input id="dev-name" class="inpt field__control" type="date"
+                                                                        placeholder="Укажите адрес" disabled>
+                                                                </div>
+                                                                <div class="field-sm">
+                                                                    <input id="dev-name" class="inpt field__control" type="time"
+                                                                        placeholder="Укажите адрес" disabled>
+                                                                </div>
+                                                            </div>
                                                     </div>
                                                     <div class="field">
                                                         <label class="field__label" for="phone">Телефон</label>
@@ -228,14 +231,14 @@
                                                 <!-- чекбоксы в строку (мини-услуги внутри панели) -->
                                                 <div class="field">
                                                     <div class="field__label">Дополнительные услуги</div>
-                                                    <div class="field-wrapper">
+                                                    <div class="field-wrapper toggler-wrap">
                                                         <div class="field">
                                                             <div class="switcher-outer">
                                                                 <div class="switcher-heading">
                                                                     <label class="switcher">
                                                                         <input type="checkbox" data-name="Замер площади"
                                                                             data-price="500" name="1"
-                                                                            data-panel-for="1" />
+                                                                            data-panel-for="1" class="service" />
                                                                         <span class="slider"></span>
                                                                     </label>
                                                                     <div class="switch-title">Замер площади</div>
@@ -248,60 +251,56 @@
                                                             <div class="switcher-outer">
                                                                 <div class="switcher-heading">
                                                                     <label class="switcher">
-                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                        <input type="checkbox" data-name="Оценка для банка"
                                                                             data-price="500" name="1"
-                                                                            data-panel-for="1" />
+                                                                            data-panel-for="1" class="service" />
                                                                         <span class="slider"></span>
                                                                     </label>
-                                                                    <div class="switch-title">Замер площади</div>
+                                                                    <div class="switch-title">Оценка для банка</div>
                                                                 </div>
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                                <p>Выявление фактической площади</p>
                                                             </div>
                                                         </div>
                                                         <div class="field">
                                                             <div class="switcher-outer">
                                                                 <div class="switcher-heading">
                                                                     <label class="switcher">
-                                                                        <input type="checkbox" data-name="Замер площади"
-                                                                            data-price="500" name="1"
-                                                                            data-panel-for="1" />
+                                                                        <input type="checkbox" data-name="План квартиры в AutoCad"
+                                                                            data-price="700" name="1"
+                                                                            data-panel-for="1" class="service" />
                                                                         <span class="slider"></span>
                                                                     </label>
-                                                                    <div class="switch-title">Замер площади</div>
+                                                                    <div class="switch-title">План квартиры в AutoCad</div>
                                                                 </div>
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                                <p>Подробный план квартиры</p>
                                                             </div>
                                                         </div>
                                                         <div class="field">
                                                             <div class="switcher-outer">
                                                                 <div class="switcher-heading">
                                                                     <label class="switcher">
-                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                        <input type="checkbox" data-name="Тепловизор"
                                                                             data-price="500" name="1"
-                                                                            data-panel-for="1" />
+                                                                            data-panel-for="1" class="service" />
                                                                         <span class="slider"></span>
                                                                     </label>
-                                                                    <div class="switch-title">Замер площади</div>
+                                                                    <div class="switch-title">Тепловизор</div>
                                                                 </div>
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                                <p>Тепловизионный осмотр квартиры</p>
                                                             </div>
                                                         </div>
                                                         <div class="field">
                                                             <div class="switcher-outer">
                                                                 <div class="switcher-heading">
                                                                     <label class="switcher">
-                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                        <input type="checkbox" data-name="Замер радиации"
                                                                             data-price="500" name="1"
-                                                                            data-panel-for="1" />
+                                                                            data-panel-for="1" class="service" />
                                                                         <span class="slider"></span>
                                                                     </label>
-                                                                    <div class="switch-title">Замер площади</div>
+                                                                    <div class="switch-title">Замер радиации</div>
                                                                 </div>
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                                <p>Измерение уровня радиационного фона</p>
                                                             </div>
                                                         </div>
                                                     </div>

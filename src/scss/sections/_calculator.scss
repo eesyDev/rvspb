@@ -189,7 +189,14 @@
             font-size: 12px;
             font-weight: 500;
         }
-    }   
+    }  
+    .switcher-outer {
+        p {
+            color: rgba(0, 0, 0, .35);
+            margin-top: 10px;
+            font-size: 10px;
+        }
+    } 
     /* общая панель + анимация раскрытия (совместимо с прошлым JS) */
 .switch-panel {
     overflow: hidden;
@@ -208,11 +215,22 @@
     flex-wrap: wrap;
     gap: 12px;
     .field {
-      flex: 1 1 48%;
+      width: 48%;
 
     }
+    .field-sm {
+        width: 48%;
+    }
   }
-  
+  .toggler-wrap {
+    margin-top: 15px;
+    .field {
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 10px;
+        padding: 8px;
+        margin: 0;
+    }
+  }
   /* панель-список тумблеров */
   .panel__row {
     display: grid;
