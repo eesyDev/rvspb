@@ -33,6 +33,7 @@
             background-color: var(--color-gray-200);
             padding: 20px;
             border-radius: 0 0 10px 10px;
+            height: calc(100% - 180px);
         }
         &-title {
             font-weight: 700;

@@ -107,7 +107,7 @@
             font-weight: 700;
         }
     }
-    .switch {
+    .switch, .switcher {
         position: relative;
         display: flex;
         width: 24px;
@@ -115,7 +115,7 @@
 
       }
       
-      .switch input {
+      .switch input, .switcher input {
         opacity: 0;
         width: 0;
         height: 0;
@@ -160,6 +160,7 @@
             display: flex;
             gap: 16px;
             margin-top: 5px;
+            flex-wrap: wrap;
         }
         .switch-outer {
             background-color: var(--color--white);
@@ -180,7 +181,84 @@
             font-size: 12px;
             font-weight: 500;
         }
-    }     
+    }   
+    .switcher-heading {
+        display: flex;
+        gap: 9px;
+        .switcher-title {
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }   
+    /* общая панель + анимация раскрытия (совместимо с прошлым JS) */
+.switch-panel {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .3s ease, opacity .2s ease;
+    background-color: var(--color--white);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .switch-panel.is-open { opacity: 1; }
+
+  .field-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    .field {
+      flex: 1 1 48%;
+
+    }
+  }
+  
+  /* панель-список тумблеров */
+  .panel__row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-top: 1px solid rgba(0,0,0,.06);
+  }
+  .panel__row:first-child { border-top: 0; }
+  .panel__price { white-space: nowrap; color: #666; font-size: 14px; }
+  .panel-toggle { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; }
+  .panel-toggle input { transform: translateY(1px); }
+  
+  /* панель-контролы */
+  .field { margin: 10px 0; }
+  .field__label { font-size: 14px; color: #666; margin-bottom: 6px; }
+  .field__control { width: 100%; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+  
+  .segmented {
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 6px;
+  }
+  .segmented__input { display: none; }
+  .segmented__btn {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .segmented__input:checked + .segmented__btn {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+  }
+  
+  .inline-checks { display: flex; flex-wrap: wrap; gap: 12px 16px; }
+  .inline-checks label { display: inline-flex; align-items: center; gap: 8px; }
+  
+  /* disabled внутри закрытой панели — уже делаем в JS,
+     но визуально подсветим: */
+  .switch-panel [disabled] { opacity: .6; cursor: not-allowed; }
+  
 }
 
 @media screen and (max-width: 1199.99px) {

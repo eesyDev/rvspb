@@ -5,19 +5,21 @@
                 <h2 class="title h2">Зачем нужна помощь в приемке квартиры:</h2>
                 <ul class="list calculator__list">
                     <li>
-                        <span class="list-title">Выявление скрытых дефектов:</span>
-                        <span class="list-descr">Профессионалы используют специальное оборудование для выявления скрытых
-                            проблем</span>
+                        <span class="list-title">Выявление скрытых дефектов</span>
+                        <span class="list-descr">Профессиональный осмотр квартиры позволяет обнаружить строительные
+                            нарушения, которые невозможно заметить без профессионального оборудования.</span>
                     </li>
                     <li>
-                        <span class="list-title">Экономия времени и денег:</span>
-                        <span class="list-descr">Недостатки, выявленные на этапе приемки, могут быть устранены
-                            застройщиком, что сэкономит ваши деньги и время на последующий ремонт</span>
+                        <span class="list-title">Экономия времени и денег</span>
+                        <span class="list-descr">Приемка квартиры с экспертом помогает избежать излишних расходов на
+                            ремонт. Все выявленные недостатки фиксируются в акте осмотра, и застройщик обязан устранить
+                            их за свой счёт.</span>
                     </li>
                     <li>
-                        <span class="list-title">Юридическая защита:</span>
-                        <span class="list-descr">Могут быть устранены застройщиком, что сэкономит ваши деньги и время на
-                            последующий ремонт</span>
+                        <span class="list-title">Юридическая защита</span>
+                        <span class="list-descr">При возникновении спора с застройщиком, вы можете использовать акт
+                            осмотра квартиры с дефектами, экспертное заключение, которое можно использовать в суде, у
+                            нотариуса или при подаче претензий.</span>
                     </li>
                 </ul>
             </div>
@@ -62,22 +64,248 @@
                                             <div class="switch-outer">
                                                 <div class="switch-heading">
                                                     <label class="switch">
-                                                        <input type="checkbox" class="service" data-name="Подробный чертеж" data-price="500" name="1" />
+                                                        <input type="checkbox" class="service"
+                                                            data-name="Подробный чертеж" data-price="500" name="1"
+                                                            data-panel-for="1" />
                                                         <span class="slider"></span>
                                                     </label>
                                                     <div class="switch-title">Подробный чертеж</div>
                                                 </div>
                                                 <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
                                             </div>
+
                                             <div class="switch-outer">
                                                 <div class="switch-heading">
                                                     <label class="switch">
-                                                        <input type="checkbox" class="service" data-name="Выезд инженера" data-price="700" name="2" />
+                                                        <input type="checkbox" class="service"
+                                                            data-name="Выезд инженера" data-price="700" name="2"
+                                                            data-panel-for="1" />
                                                         <span class="slider"></span>
                                                     </label>
                                                     <div class="switch-title">Выезд инженера</div>
                                                 </div>
                                                 <p>Замеры лазерным дальномером, чертеж с размерами и площадями</p>
+
+                                            </div>
+                                            <!-- ПАНЕЛЬ ВЫПАДАЮЩЕГО СПИСКА -->
+                                            <div class="switch-panel panel panel--toggles" aria-hidden="true">
+                                                <div class="panel__row">
+                                                    <div class="switcher-outer">
+                                                        <div class="switcher-heading flex-between">
+                                                            <div class="flex gap-10 items-center">
+                                                                <label class="panel-toggle switcher">
+                                                                    <input type="checkbox" class="subservice"
+                                                                        data-name="План розеток" data-price="5"
+                                                                        data-unit="руб/м²" disabled>
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                                <span class="panel-toggle__title">План розеток</span>
+                                                            </div>
+
+                                                            <span class="panel__price">5 руб/м²</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel__row">
+                                                    <div class="switcher-outer">
+                                                        <div class="switcher-heading flex-between">
+                                                            <div class="flex gap-10 items-center">
+                                                                <label class="panel-toggle switcher">
+                                                                    <input type="checkbox" class="subservice"
+                                                                        data-name="План розеток" data-price="5"
+                                                                        data-unit="руб/м²" disabled>
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                                <span class="panel-toggle__title">План освещения</span>
+                                                            </div>
+
+                                                            <span class="panel__price">5 руб/м²</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel__row">
+                                                    <div class="switcher-outer">
+                                                        <div class="switcher-heading flex-between">
+                                                            <div class="flex gap-10 items-center">
+                                                                <label class="panel-toggle switcher">
+                                                                    <input type="checkbox" class="subservice"
+                                                                        data-name="План розеток" data-price="5"
+                                                                        data-unit="руб/м²" disabled>
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                                <span class="panel-toggle__title">Составление плана
+                                                                    квартиры</span>
+                                                            </div>
+
+                                                            <span class="panel__price">5 руб/м²</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="panel__row">
+                                                    <div class="switcher-outer">
+                                                        <div class="switcher-heading flex-between">
+                                                            <div class="flex gap-10 items-center">
+                                                                <label class="panel-toggle switcher">
+                                                                    <input type="checkbox" class="subservice"
+                                                                        data-name="План розеток" data-price="5"
+                                                                        data-unit="руб/м²" disabled>
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                                <span class="panel-toggle__title">Составление плана
+                                                                    квартиры</span>
+                                                            </div>
+
+                                                            <span class="panel__price">5 руб/м²</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- ПАНЕЛЬ -->
+                                            <div class="switch-panel panel panel--controls" aria-hidden="true">
+                                                <div class="field-wrapper">
+                                                    <div class="field">
+                                                        <label class="field__label" for="dev-name">Площадь
+                                                            квартиры</label>
+                                                        <input id="dev-name" class="inpt field__control" type="text"
+                                                            placeholder="Укажите площадь" disabled>
+                                                    </div>
+                                                    <div class="field">
+                                                        <div class="field__label">Количество комнат</div>
+                                                        <div class="segmented" role="group"
+                                                            aria-label="Количество комнат">
+                                                            <input type="radio" name="rooms" id="rooms-studio"
+                                                                class="segmented__input" value="studio" disabled>
+                                                            <label for="rooms-studio"
+                                                                class="segmented__btn">Студия</label>
+
+                                                            <input type="radio" name="rooms" id="rooms-1"
+                                                                class="segmented__input" value="1" disabled>
+                                                            <label for="rooms-1" class="segmented__btn">1</label>
+
+                                                            <input type="radio" name="rooms" id="rooms-2"
+                                                                class="segmented__input" value="2" disabled>
+                                                            <label for="rooms-2" class="segmented__btn">2</label>
+
+                                                            <input type="radio" name="rooms" id="rooms-3"
+                                                                class="segmented__input" value="3" disabled>
+                                                            <label for="rooms-3" class="segmented__btn">3</label>
+
+                                                            <input type="radio" name="rooms" id="rooms-4"
+                                                                class="segmented__input" value="4" disabled>
+                                                            <label for="rooms-4" class="segmented__btn">4</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <label class="field__label" for="dev-name">Название ЖК</label>
+                                                        <input id="dev-name" class="inpt field__control" type="text"
+                                                            placeholder="Укажите название" disabled>
+                                                    </div>
+                                                    <div class="field">
+                                                        <label class="field__label" for="dev-name">Укажите дату и
+                                                            время</label>
+                                                        <div class="field-sm">
+
+                                                            <input id="dev-name" class="inpt field__control" type="date"
+                                                                placeholder="Укажите адрес" disabled>
+                                                        </div>
+                                                        <div class="field-sm">
+                                                            <input id="dev-name" class="inpt field__control" type="time"
+                                                                placeholder="Укажите адрес" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field">
+                                                        <label class="field__label" for="phone">Телефон</label>
+                                                        <input id="phone" class="inpt field__control" type="tel"
+                                                            placeholder="+7" disabled>
+                                                    </div>
+                                                    <div class="field">
+                                                        Итого
+                                                        <span class="result"> 1500 руб</ы>
+                                                    </div>
+                                                </div>
+
+                                                <!-- чекбоксы в строку (мини-услуги внутри панели) -->
+                                                <div class="field">
+                                                    <div class="field__label">Дополнительные услуги</div>
+                                                    <div class="field-wrapper">
+                                                        <div class="field">
+                                                            <div class="switcher-outer">
+                                                                <div class="switcher-heading">
+                                                                    <label class="switcher">
+                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                            data-price="500" name="1"
+                                                                            data-panel-for="1" />
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <div class="switch-title">Замер площади</div>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <div class="switcher-outer">
+                                                                <div class="switcher-heading">
+                                                                    <label class="switcher">
+                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                            data-price="500" name="1"
+                                                                            data-panel-for="1" />
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <div class="switch-title">Замер площади</div>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <div class="switcher-outer">
+                                                                <div class="switcher-heading">
+                                                                    <label class="switcher">
+                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                            data-price="500" name="1"
+                                                                            data-panel-for="1" />
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <div class="switch-title">Замер площади</div>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <div class="switcher-outer">
+                                                                <div class="switcher-heading">
+                                                                    <label class="switcher">
+                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                            data-price="500" name="1"
+                                                                            data-panel-for="1" />
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <div class="switch-title">Замер площади</div>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="field">
+                                                            <div class="switcher-outer">
+                                                                <div class="switcher-heading">
+                                                                    <label class="switcher">
+                                                                        <input type="checkbox" data-name="Замер площади"
+                                                                            data-price="500" name="1"
+                                                                            data-panel-for="1" />
+                                                                        <span class="slider"></span>
+                                                                    </label>
+                                                                    <div class="switch-title">Замер площади</div>
+                                                                </div>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit. Minima quisquam consectetur excepturi</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -94,12 +322,13 @@
                                                 <li>Подробный чертеж</li>
                                             </ul>
                                             <div class="divider"></div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="form-right-bottom">
                                         <div class="selected-sum">3500 руб.</div>
-                                        <button type="submit" class="button button--primary w-100">Заказать приёмку</button>
+                                        <a href="#acception" type="submit"
+                                            class="button button--primary w-100 open-dialog">Заказать приёмку</a>
                                     </div>
 
                                 </div>

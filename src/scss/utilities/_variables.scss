@@ -29,6 +29,12 @@ $w-max:        2560px; // Max screen
 .flex-center {
     justify-content: center;
 }
+.items-center {
+    align-items: center;
+}
+.gap-10 {
+    gap: 10px;
+}
 
 .button {
     display: flex;
@@ -113,11 +119,29 @@ h1, .h1 {
     font-weight: 700;
 }
 
+.paragraph {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.input {
+    height: 55px;
+    border-radius: 55px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    padding: 0 25px;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.35);
+    }
+}
+
 @media screen and (max-width: 767.99px) {
     .title {
         font-size: 24px;
     }
     .h1 {
         font-size: 24px;
+    }
+    .paragraph {
+        font-size: 14px;
     }
 }
